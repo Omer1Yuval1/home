@@ -1,0 +1,12 @@
+.home_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.profile_photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

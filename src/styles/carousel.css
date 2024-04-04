@@ -1,0 +1,42 @@
+.carousel_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    width: 60%;
+    height: 300px;
+
+    border: 1px solid palevioletred;
+}
+
+.carousel_main_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+}
+
+.carousel_main_content_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_main_content_wrapper .carousel_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 100%;
+    border: 1px solid yellowgreen;
+}
+
+.carousel_main_content_wrapper .carousel_buttons:hover {
+    background-color: black;
+}
+
+.carousel_buttons:hover {
+    cursor: pointer;
+}
