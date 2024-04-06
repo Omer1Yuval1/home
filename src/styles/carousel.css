@@ -13,6 +13,7 @@
     flex-direction: column;
     width: 95%;
     height: 100%;
+    /* border-radius: 40px; */
     /* border: 1px solid blue; */
     /* height: 90%; */
 }
@@ -51,7 +52,9 @@
 .carousel_caption_wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 20%;
+    background-color: #273746;
     /* width: 100%; */
     /* padding: 20px; */
     /* border: 1px solid yellowgreen; */
@@ -62,19 +65,21 @@
     width: 90%;
 }
 
-.carousel_main_content_wrapper .carousel_buttons {
+.carousel_next_previous {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 30px;
+    background-color: #34495E;
+    text-align: center;
     /* height: 100%; */
     /* border: 1px solid yellowgreen; */
 }
 
-.carousel_main_content_wrapper .carousel_buttons:hover {
-    background-color: black;
+.carousel_next_previous:hover {
+    background-color: #2E4053;
 }
 
-.carousel_buttons:hover {
+.carousel_buttons:hover, .carousel_next_previous:hover {
     cursor: pointer;
 }

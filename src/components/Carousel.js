@@ -29,19 +29,18 @@ const Carousel = () => {
 
     return (
         <div className="carousel_wrapper">
+            <span onClick={() => setCurrentPage(Math.max(0, currentPage-1))} className="material-icons carousel_next_previous">arrow_back_ios</span> {/* style={{"borderRight": "1px solid gray"}} */}
             
             <div className="carousel_main_wrapper">
                 <div className="carousel_main_content_wrapper">
-                    <span onClick={() => setCurrentPage(Math.max(0, currentPage-1))} style={{"borderRight": "1px solid gray"}} className="material-icons carousel_buttons">arrow_back_ios</span>
                     <div className="figure_wrapper"><img src={pages[currentPage].src} /></div>
-                    <span onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} style={{"borderLeft": "1px solid gray"}} className="material-icons carousel_buttons">arrow_forward_ios</span>
                 </div>
                 
                 <div className="carousel_caption_wrapper">
                     <a href={pages[currentPage].url} target="_blank"><div>{pages[currentPage].caption}</div></a>
                 </div>
             </div>
-
+            <span onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} className="material-icons carousel_next_previous">arrow_forward_ios</span>
             <div className="carousel_controllers_wrapper">
                 {pages.map((page, i) => (
                     (currentPage === i)
