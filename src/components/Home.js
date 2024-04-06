@@ -12,25 +12,42 @@ const Home = () => {
     return (
         <div className="home_wrapper">
             
-            <div className="profile_photo">
-                <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=SaOvLxEAAAAJ&citpid=1" />
+            <div className="main_panel_wrapper">
+            
+                <div className="profile_wrapper">
+                    <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=SaOvLxEAAAAJ&citpid=1" />
+                    <div className="profile_content">
+                        <span>Dr. Omer Yuval</span>
+                        <span>Postdoctoral researcher</span>
+                    </div>
+                </div>
+            
+                <Carousel />
+            </div>
+
+            <div className="info_panel_wrapper">
+                <span>
+                    I am a computational neuroscientist studying the neural control of locomotion.
+                    I develop biologically-grounded models that allow me to ask questions and make predictions at multiple levels and across time scales.
+                    This includes single neuron activity and network dynamics, muscles, body morphology and mechanics, and interaction with the environment.
+                    My main focus is the control of locomotion, with an emphasis on neural dynamics and form-function relations.
+                    I have recently finished my PhD at the university of Leeds, UK, and I am now a postdoctoral researcher in Tel Aviv university.
+                    I am keen to uncover fundemental principles that allow biological neural networks to give rise to complex behaviours.
+                </span>
+            </div>
+
+            <div className="info_panel_wrapper">
+                <span>Research interests: Neural control of animal locomotion, Mechanical modelling, Natural language processing</span>
             </div>
             
-            <Carousel />
-            {/* <Carousel width="30%">
-                <div>
-                    <img src="https://www.gardeningknowhow.com/wp-content/uploads/2021/07/mole-cricket.jpg" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc_LtNZOnyOKLuW9p3lOIph-wN8rgGBGr3YUNeZnbUDpKR38MAZUA1rrwebDUW46rPLC__SMErdWEjC_MN8QrtVIsbMKokXxHvwHT4FgNB1jScZMculhao97PblbzZE8F7hMB0HPpUc6VJxC0UNbqeCN=w1589-h894-s-no?authuser=0" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc8yjNCW0qJxvYAd_OLgdXIfEkSWJtpDh5YBiJC2LcjwMjlIOxSSD5uZcpcv-r-aXdgzQOJjtnXMGosblR6sGS2EiAuo8F-s66CuwgUv4dLarIC-j0c_RzfCUWmBpfhSfH_fZ4Mdbrco0yRTUw6W1XCN=w1377-h774-s-no?authuser=0" />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel> */}
+            <div className="info_panel_wrapper">
+                <span>Skills: 3D Imaging Computer vision, Model-free reinforcement learning</span>
+            </div>
+            
+            <div className="info_panel_wrapper">
+                <span>Programming languages: Python, Matlab, C, React, Javascript, Node.js</span>
+            </div>
+
             
         </div>
     )
