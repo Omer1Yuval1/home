@@ -7,6 +7,7 @@ import pvd from "../assets/pvd.png";
 import a2 from "../assets/a2.png";
 import a3 from "../assets/a3.png";
 import latexs from "../assets/latexs.png";
+import mole_cricket_forward from "../assets/mole_cricket_forward_cropped.mp4";
 
 const Carousel = () => {
     
@@ -15,17 +16,24 @@ const Carousel = () => {
     const [play, setPlay] = useState(true);
     const [currentPage, setCurrentPage] = useState(0);
 
-    const pages = [{src: pvd, caption: "Neuron tracing and quantitative analyses of dendritic architecture reveal symmetrical three-way-junctions and phenotypes of git-1 in C. elegans", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185"},
-                     {src: a2, caption: "3D shape reconstruction of semi-transparent worms", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"},
-                     {src: a3, caption: "a3", url: ""},
-                     {src: latexs, caption: "LaTeXs", url: "https://omer1yuval1.github.io/LaTeXs/"},
+    const pages = [{src: pvd, caption: "Neuron tracing and quantitative analyses of dendritic architecture reveal symmetrical three-way-junctions and phenotypes of git-1 in C. elegans", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185", type: "image"},
+                     {src: a2, caption: "3D shape reconstruction of semi-transparent worms", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf", type: "image"},
+                     {src: a3, caption: "a3", url: "", type: "image"},
+                     {src: latexs, caption: "LaTeXs", url: "https://omer1yuval1.github.io/LaTeXs/", type: "image"},
+                     {src: mole_cricket_forward, caption: "Mole cricket locomotion", url: "", type: "video"},
     ];
 
     useEffect(() => {
         if(play) {
+            if(pages[currentPage].type === "image") {
+                var delay = 2000;
+            } else if(pages[currentPage].type === "video") {
+                var delay = 6000;
+            }
+
             const timeout = setTimeout(() => {
                 setCurrentPage((currentPage+1) % pages.length);
-            }, 2000);
+            }, delay);
             return () => clearTimeout(timeout);
         }
       }, [currentPage, play]);
@@ -36,14 +44,25 @@ const Carousel = () => {
             
             <div className="carousel_main_wrapper">
                 <div className="carousel_main_content_wrapper">
-                    <div className="figure_wrapper"><img src={pages[currentPage].src} /></div>
+                    <div className="figure_wrapper">
+                        {pages[currentPage].type === "image"
+                        ?
+                            <img src={pages[currentPage].src} />
+                        :
+                            <video autoplay="true" loop="true" muted controls="controls">
+                                <source src={pages[currentPage].src} type="video/mp4" />
+                            </video>
+                        }
+                    </div>
                 </div>
                 
                 <div className="carousel_caption_wrapper">
                     <a href={pages[currentPage].url} target="_blank"><div>{pages[currentPage].caption}</div></a>
                 </div>
             </div>
+            
             <span onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} className="material-icons carousel_next_previous">arrow_forward_ios</span>
+            
             <div className={`carousel_controllers_wrapper ${!darkMode ? "carousel_controllers_wrapper_light" : ""}`}>
             
                 {pages.map((page, i) => (
