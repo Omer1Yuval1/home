@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useContext } from "react";
 import { Link } from 'react-router-dom';
 
 import github from "../assets/github.png";
@@ -8,18 +8,11 @@ import academic from "../assets/academic.png";
 import orcid from "../assets/orcid.png";
 
 import '../styles/navbar.css';
+import { ThemeContext } from "../context/ThemeContext";
 
 const Navbar = () => {
 
-    const [darkMode, setDarkMode] = useState(true);   
-
-    useEffect(() => {
-        if(darkMode) {
-            document.body.classList.add("dark");
-        } else {
-            document.body.classList.remove("dark");
-        }
-    }, [darkMode]);
+    const { darkMode, setDarkMode } = useContext(ThemeContext);
     
     return (
         <div className="navbarContainer">

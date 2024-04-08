@@ -1,4 +1,5 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 import '../styles/carousel.css';
 
@@ -9,11 +10,13 @@ import latexs from "../assets/latexs.png";
 
 const Carousel = () => {
     
+    const { darkMode } = useContext(ThemeContext);
+
     const [play, setPlay] = useState(true);
     const [currentPage, setCurrentPage] = useState(0);
 
     const pages = [{src: pvd, caption: "Neuron tracing and quantitative analyses of dendritic architecture reveal symmetrical three-way-junctions and phenotypes of git-1 in C. elegans", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185"},
-                     {src: a2, caption: "Ilett, T. P., Yuval, O., Ranner, T., Cohen, N., & Hogg, D. C. (2023). 3D shape reconstruction of semi-transparent worms. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 12565-12575).", url: ""},
+                     {src: a2, caption: "3D shape reconstruction of semi-transparent worms", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"},
                      {src: a3, caption: "a3", url: ""},
                      {src: latexs, caption: "LaTeXs", url: "https://omer1yuval1.github.io/LaTeXs/"},
     ];
@@ -41,7 +44,8 @@ const Carousel = () => {
                 </div>
             </div>
             <span onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} className="material-icons carousel_next_previous">arrow_forward_ios</span>
-            <div className="carousel_controllers_wrapper">
+            <div className={`carousel_controllers_wrapper ${!darkMode ? "carousel_controllers_wrapper_light" : ""}`}>
+            
                 {pages.map((page, i) => (
                     (currentPage === i)
                     ?

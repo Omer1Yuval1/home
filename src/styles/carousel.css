@@ -4,8 +4,17 @@
     justify-content: center;
     color: aliceblue;
     width: 70%;
+    /* flex-grow: 1; */
     height: 400px;
+    margin: auto;
     /* border: 3px solid palevioletred; */
+}
+
+@media screen and (max-width: 800px) {
+    .carousel_wrapper {
+        width: 100% !important;
+        margin-top: 30px;
+    }
 }
 
 .carousel_main_wrapper {
@@ -34,6 +43,10 @@
     width: 5%;
 }
 
+.carousel_controllers_wrapper_light {
+    color: #1a1927 !important;
+}
+
 .carousel_main_content_wrapper .figure_wrapper {
     display: flex;
     /* justify-content: center; */
@@ -54,14 +67,17 @@
     justify-content: center;
     align-items: center;
     height: 20%;
-    background-color: #273746;
+    background-color: antiquewhite; /* #273746 */
+    overflow-y: auto;
     /* width: 100%; */
     /* padding: 20px; */
     /* border: 1px solid yellowgreen; */
 }
 
 .carousel_caption_wrapper a {
-    color: white;
+    color: #273746;
+    font-size: 18px;
+    font-weight: 500;
     width: 90%;
 }
 

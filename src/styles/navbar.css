@@ -13,38 +13,6 @@
   /* background: #1C2833; */
 }
 
-/* .navbarLogo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .navbarLogo span {
-  color: #d7d9da;
-  height: 20px;
-  margin-right: 5px;
-} */
-
-/* nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-} */
-
-/* nav a {
-  margin-left: 10px;
-  cursor: pointer;
-} */
-
-/* nav div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-} */
-
 .navbarContainer button, .navbarContainer nav span, .navbarContainer a {
   color: #9d9d9d;
   border: none;
@@ -56,28 +24,11 @@
   font-size: 18px;
 }
 
-/* nav .user_links_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-} */
-
 .user_links_wrapper a {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-
-/* .user_links_wrapper img {
-  margin: 0 6px;
-  border-radius: 50%;
-} */
-
-/* nav .material-symbols-outlined {
-	font-family: 'Material Icons';
-  font-size: 30px;
-} */
 
 /* Theme */
 .toggle_dark_mode {
@@ -89,12 +40,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-  margin: auto 0 auto 100px;
-	width: 5%;
+  /* margin: auto; */
+	width: 25%;
 }
 
 .navbar_icon {
-	margin-right: 20px;
+	margin: auto;
 }
 
 .navbar_img {
