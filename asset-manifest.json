@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.2b085b2f.css",
+    "main.css": "/home/static/css/main.c8344cc0.css",
     "main.js": "/home/static/js/main.59ee53c4.js",
     "static/js/453.4b8d8fd0.chunk.js": "/home/static/js/453.4b8d8fd0.chunk.js",
     "static/media/mole_cricket_forward_cropped.mp4": "/home/static/media/mole_cricket_forward_cropped.018e5af4baea713fa363.mp4",
@@ -13,12 +13,12 @@
     "static/media/orcid.png": "/home/static/media/orcid.9153287c335d404a37c7.png",
     "static/media/scholar.png": "/home/static/media/scholar.7431f663e98d5aa0cbc5.png",
     "index.html": "/home/index.html",
-    "main.2b085b2f.css.map": "/home/static/css/main.2b085b2f.css.map",
+    "main.c8344cc0.css.map": "/home/static/css/main.c8344cc0.css.map",
     "main.59ee53c4.js.map": "/home/static/js/main.59ee53c4.js.map",
     "453.4b8d8fd0.chunk.js.map": "/home/static/js/453.4b8d8fd0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b085b2f.css",
+    "static/css/main.c8344cc0.css",
     "static/js/main.59ee53c4.js"
   ]
 }
