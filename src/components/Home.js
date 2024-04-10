@@ -2,6 +2,7 @@ import { React, useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
 import Carousel from "./Carousel";
+import profile_photo from "../assets/profile_photo.jpg";
 
 import '../styles/home.css';
 
@@ -14,7 +15,7 @@ const Home = () => {
             <div className="main_panel_wrapper">
 
                 <div className={`profile_wrapper ${!darkMode ? "profile_wrapper_light" : ""}`}>
-                    <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=SaOvLxEAAAAJ&citpid=1" />
+                    <img src={profile_photo} />
                     <div className="profile_content">
                         <span>Dr. Omer Yuval</span>
                         <span>Computational neuroscientist</span>
