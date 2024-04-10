@@ -5,6 +5,7 @@
     justify-content: space-between;
     padding: 30px 10px;
     background-color: #1a1927;
+    overflow-y: auto;
 }
 
 .home_wrapper_light {
@@ -61,7 +62,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    /* text-align: left; */
     font-size: 20px;
 }
 

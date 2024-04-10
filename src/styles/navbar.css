@@ -1,6 +1,6 @@
 .navbarContainer {
   display: flex;
-  padding: 5px 20px;
+  padding: 0 20px;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -40,12 +40,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+  height: 100%;
   /* margin: auto; */
 	width: 25%;
 }
 
 .navbar_icon {
-	margin: auto;
+	/* margin: auto; */
+  margin-top: 1%;
 }
 
 .navbar_img {

@@ -19,6 +19,7 @@ const Home = () => {
                         <span>Dr. Omer Yuval</span>
                         <span>Computational neuroscientist</span>
                         <span>Postdoctoral researcher</span>
+                        <span>omeryu@tauex.tau.ac.il</span>
                     </div>
                 </div>
             
@@ -51,8 +52,6 @@ const Home = () => {
             <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
                 <span>Programming languages: Python, Matlab, C, React, Javascript, Node.js</span>
             </div>
-
-            
         </div>
     )
 }

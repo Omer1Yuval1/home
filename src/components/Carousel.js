@@ -49,7 +49,7 @@ const Carousel = () => {
                         ?
                             <img src={pages[currentPage].src} />
                         :
-                            <video autoplay="true" loop="true" muted controls="controls">
+                            <video AutoPlay="true" loop={true} muted controls="controls">
                                 <source src={pages[currentPage].src} type="video/mp4" />
                             </video>
                         }

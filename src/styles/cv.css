@@ -1,0 +1,9 @@
+.cv_wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.cv_wrapper iframe {
+    height: 98%;
+}
