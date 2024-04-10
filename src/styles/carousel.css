@@ -86,14 +86,15 @@
     align-items: center;
     justify-content: center;
     width: 30px;
-    background-color: #34495E;
+    color: #1a1927;
+    background-color: #E6B0AA; /* #34495E; */
     text-align: center;
     /* height: 100%; */
     /* border: 1px solid yellowgreen; */
 }
 
 .carousel_next_previous:hover {
-    background-color: #2E4053;
+    background-color: #D98880;
 }
 
 .carousel_buttons:hover, .carousel_next_previous:hover {
