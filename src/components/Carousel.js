@@ -40,7 +40,7 @@ const Carousel = () => {
 
     return (
         <div className="carousel_wrapper">
-            <span onClick={() => setCurrentPage(Math.max(0, currentPage-1))} className="material-icons carousel_next_previous">arrow_back_ios</span> {/* style={{"borderRight": "1px solid gray"}} */}
+            <span style={{"borderRadius": "15px 0 0 15px"}} onClick={() => setCurrentPage(Math.max(0, currentPage-1))} className="material-icons carousel_next_previous">arrow_back_ios</span> {/* style={{"borderRight": "1px solid gray"}} */}
             
             <div className="carousel_main_wrapper">
                 <div className="carousel_main_content_wrapper">
@@ -61,7 +61,7 @@ const Carousel = () => {
                 </div>
             </div>
             
-            <span onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} className="material-icons carousel_next_previous">arrow_forward_ios</span>
+            <span style={{"borderRadius": "0 15px 15px 0"}} onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} className="material-icons carousel_next_previous">arrow_forward_ios</span>
             
             <div className={`carousel_controllers_wrapper ${!darkMode ? "carousel_controllers_wrapper_light" : ""}`}>
             
