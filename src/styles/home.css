@@ -82,6 +82,7 @@ ul {
 .info_panel_wrapper {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     color: white;
     font-size: 20px;
     margin: 0 25px 25px 25px;
