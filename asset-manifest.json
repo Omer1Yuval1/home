@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.e9b91525.css",
-    "main.js": "/home/static/js/main.0e2cc521.js",
+    "main.css": "/home/static/css/main.f0f16143.css",
+    "main.js": "/home/static/js/main.33de9458.js",
     "static/js/453.4b8d8fd0.chunk.js": "/home/static/js/453.4b8d8fd0.chunk.js",
     "static/media/mole_cricket_forward_cropped.mp4": "/home/static/media/mole_cricket_forward_cropped.018e5af4baea713fa363.mp4",
     "static/media/locust_and_mole_cricket_models.png": "/home/static/media/locust_and_mole_cricket_models.cb0fc1391e913d4e85e0.png",
@@ -16,12 +16,12 @@
     "static/media/orcid.png": "/home/static/media/orcid.9153287c335d404a37c7.png",
     "static/media/scholar.png": "/home/static/media/scholar.7431f663e98d5aa0cbc5.png",
     "index.html": "/home/index.html",
-    "main.e9b91525.css.map": "/home/static/css/main.e9b91525.css.map",
-    "main.0e2cc521.js.map": "/home/static/js/main.0e2cc521.js.map",
+    "main.f0f16143.css.map": "/home/static/css/main.f0f16143.css.map",
+    "main.33de9458.js.map": "/home/static/js/main.33de9458.js.map",
     "453.4b8d8fd0.chunk.js.map": "/home/static/js/453.4b8d8fd0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9b91525.css",
-    "static/js/main.0e2cc521.js"
+    "static/css/main.f0f16143.css",
+    "static/js/main.33de9458.js"
   ]
 }
