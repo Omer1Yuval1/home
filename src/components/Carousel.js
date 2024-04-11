@@ -8,6 +8,8 @@ import a2 from "../assets/a2.png";
 import a3 from "../assets/a3.png";
 import latexs from "../assets/latexs.png";
 import mole_cricket_forward from "../assets/mole_cricket_forward_cropped.mp4";
+// import locust_model_mujoco from "../assets/locust_model_mujoco.png";
+import locust_model_mujoco from "../assets/locust_and_mole_cricket_models.png";
 
 const Carousel = () => {
     
@@ -18,9 +20,10 @@ const Carousel = () => {
 
     const pages = [{src: pvd, caption: "Neuron tracing and quantitative analyses of dendritic architecture reveal symmetrical three-way-junctions and phenotypes of git-1 in C. elegans", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185", type: "image"},
                      {src: a2, caption: "3D shape reconstruction of semi-transparent worms", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf", type: "image"},
-                     {src: a3, caption: "a3", url: "", type: "image"},
+                     {src: a3, caption: "3D shape reconstruction of semi-transparent worms", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf", type: "image"},
                      {src: latexs, caption: "LaTeXs", url: "https://omer1yuval1.github.io/LaTeXs/", type: "image"},
-                     {src: mole_cricket_forward, caption: "Mole cricket locomotion", url: "", type: "video"},
+                     {src: mole_cricket_forward, caption: "Mole cricket control of locomotion", url: "", type: "video"},
+                     {src: locust_model_mujoco, caption: "Mechanical models of the desert locust (A) and mole cricket (B)", url: "", type: "image"},
     ];
 
     useEffect(() => {
