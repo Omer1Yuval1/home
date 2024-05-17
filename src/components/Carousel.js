@@ -18,12 +18,47 @@ const Carousel = () => {
     const [play, setPlay] = useState(true);
     const [currentPage, setCurrentPage] = useState(0);
 
-    const pages = [{src: pvd, caption: "Neuron tracing and quantitative analyses of dendritic architecture reveal symmetrical three-way-junctions and phenotypes of git-1 in C. elegans", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185", type: "image"},
-                     {src: a2, caption: "3D shape reconstruction of semi-transparent worms", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf", type: "image"},
-                     {src: a3, caption: "3D shape reconstruction of semi-transparent worms", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf", type: "image"},
-                     {src: latexs, caption: "LaTeXs", url: "https://omer1yuval1.github.io/LaTeXs/", type: "image"},
-                     {src: mole_cricket_forward, caption: "Mole cricket control of locomotion", url: "", type: "video"},
-                     {src: locust_model_mujoco, caption: "Mechanical models of the desert locust (A) and mole cricket (B)", url: "", type: "image"},
+    const pages = [{
+                        src: pvd, type: "image",
+                        caption: "In this work we analyzed the morphology of the PVD neuron in wild-type and mutant C. elegans worms. This work included imaging the neurons using confocal microscopy and the development of a custom deep-learning tool for image segmentation and analysis of neuron morphology",
+                        refs: [
+                            {text: "Yuval et al., 2021", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185"},
+                            {text: "Iosilevskii et al., 2024", url: "https://www.sciencedirect.com/science/article/pii/S2666166724002284"},
+                        ],
+                    },
+                    {src: a2, type: "image",
+                        caption: "3D imaging, calibration and reconstruction of the 1mm-long C. elegans nematode",
+                        refs: [
+                            {text: "Yuval et al., 2022", url: "https://etheses.whiterose.ac.uk/30113/1/PhD_Thesis_Resubmission_20220123.pdf"},
+                            {text: "Ilett et al., 2023", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"}
+                        ]
+                    },
+                    {
+                        src: a3, type: "image",
+                        caption: "3D shape reconstruction of semi-transparent worms from multiple perspectives",
+                        refs: [
+                            {text: "Ilett et al., 2023", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"}
+                        ]
+                    },
+                    {
+                        src: latexs, type: "image",
+                        caption: "LaTeXs: a tool for capturing LaTeX semantics to improve online search and text-to-speech of mathematical expressions",
+                        refs: [
+                            {text: "interactive demo", url: "https://omer1yuval1.github.io/LaTeXs/"}
+                        ]
+                    },
+                    {
+                        src: mole_cricket_forward, type: "video",
+                        caption: "In this project we are studying the mole cricket, a unique insect with extreme morphological adaptation that lives underground and specialises in tunnel formation (manuscript in preparation).",
+                        refs: [
+
+                        ]
+                    },
+                    {
+                        src: locust_model_mujoco, type: "image",
+                        caption: "We use biomechanical modelling and deep reinforcement learning to capture the gaits that we observed in-vivo in simulations. This allows us to make predictions regarding form-function relations in insects. We are currently focusing on stepping gaits in the desert locust (A) and mole cricket (B) (manuscript in preparation)",
+                        refs: []
+                    },
     ];
 
     useEffect(() => {
@@ -60,7 +95,17 @@ const Carousel = () => {
                 </div>
                 
                 <div className="carousel_caption_wrapper">
-                    <a href={pages[currentPage].url} target="_blank"><div>{pages[currentPage].caption}</div></a>
+                    <div>
+                        {pages[currentPage].caption}
+                        {pages[currentPage].refs.length > 0 && " ("}
+                        {pages[currentPage].refs.map((x, i) => (
+                            <span>
+                                {i > 0 && ", "} 
+                                <a href={x.url} target="_blank">{x.text}</a>
+                            </span>
+                        ))}
+                        {pages[currentPage].refs.length > 0 && ")."}
+                    </div>
                 </div>
             </div>
             
