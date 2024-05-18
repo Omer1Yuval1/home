@@ -31,7 +31,7 @@
 }
 
 .carousel_main_wrapper_light {
-    background-color: antiquewhite;
+    background-color: #E8F8F5; /* antiquewhite; */
     color: #1a1927 !important;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .carousel_next_previous_light {
-    background-color: rgb(249, 222, 185);
+    background-color: #D4E6F1; /* rgb(249, 222, 185); */
 }
 
 .carousel_next_previous_light:hover {

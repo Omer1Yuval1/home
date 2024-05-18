@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 
 const themeContextInfo = {
-    dark_mode: true
+    dark_mode: false
 }
 
 export const ThemeContext = createContext(themeContextInfo);
