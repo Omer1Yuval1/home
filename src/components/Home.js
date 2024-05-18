@@ -36,6 +36,7 @@ const Home = () => {
                         <li>Biologically-grounded mechanical modelling</li>
                         <li>Natural language processing</li>
                     </ul>
+                    <span className="material-symbols-outlined">psychology</span>
                 </div>
                 
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
@@ -46,6 +47,7 @@ const Home = () => {
                         <li>Model-free reinforcement learning</li>
                         <li>Fullstack development</li>
                     </ul>
+                    <span className="material-symbols-outlined">engineering</span>
                 </div>
                 
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
@@ -57,6 +59,7 @@ const Home = () => {
                         <li>SQL and mongoDB</li>
                         <li>C</li>
                     </ul>
+                    <span className="material-symbols-outlined">terminal</span>
                 </div>
 
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`} style={{"width": "100%"}}>
@@ -66,7 +69,7 @@ const Home = () => {
                         I am a computational neuroscientist studying how biological nervous systems generate smooth and robust behavior.<br/><br/>
                         I mainly focus on locomotion behaviors, although I am also highly interested in natural language processing.<br/><br/>
 
-                        Developing biologically-grounded models allows me to ask questions and make predictions at multiple levels and across time scales.<br/><br/>
+                        Developing biologically-grounded models allows me to ask questions and make predictions at multiple structural levels and across time scales.<br/><br/>
                         This includes single neuron activity and network dynamics, muscles, body morphology and mechanics, and interactions with the environment.<br/><br/>
                         
                         My ultimate goal is to distill fundemental principles of nervous system across species, and apply them to artificial systems.

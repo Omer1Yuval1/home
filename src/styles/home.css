@@ -80,6 +80,7 @@ ul {
 }
 
 .info_panel_wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -110,3 +111,8 @@ ul {
     margin-bottom: 8px;
 }
 
+.info_panel_wrapper .material-symbols-outlined {
+    position: absolute;
+    font-size: 38px;
+    right: 5%;
+}

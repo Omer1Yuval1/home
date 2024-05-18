@@ -99,7 +99,7 @@ const Carousel = () => {
                         {pages[currentPage].caption}
                         {pages[currentPage].refs.length > 0 && " ("}
                         {pages[currentPage].refs.map((x, i) => (
-                            <span>
+                            <span key={i}>
                                 {i > 0 && ", "} 
                                 <a href={x.url} target="_blank">{x.text}</a>
                             </span>
