@@ -72,12 +72,12 @@ const Home = () => {
                         Developing biologically-grounded models allows me to ask questions and make predictions at multiple structural levels and across time scales.<br/><br/>
                         This includes single neuron activity and network dynamics, muscles, body morphology and mechanics, and interactions with the environment.<br/><br/>
                         
-                        My ultimate goal is to distill fundemental principles of nervous system across species, and apply them to artificial systems.
+                        My ultimate goal is to distill fundamental principles of nervous system across species, and apply them to artificial systems.
                         {/* TODO: but why - what do I want to learn from it or achieve? */}
                         
                         {/* My main focus is the control of locomotion, with an emphasis on neural dynamics and form-function relations. */}
                         {/* I have recently finished my PhD at the university of Leeds, UK, and I am now a postdoctoral researcher in Tel Aviv university. */}
-                        {/* I am keen to uncover fundemental principles that allow biological neural networks to give rise to complex behaviours. */}
+                        {/* I am keen to uncover fundamental principles that allow biological neural networks to give rise to complex behaviours. */}
                     </span>
                 </div>
             </div>
