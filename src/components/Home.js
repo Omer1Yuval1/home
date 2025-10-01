@@ -17,9 +17,10 @@ const Home = () => {
                 <div className={`profile_wrapper ${!darkMode ? "profile_wrapper_light" : ""}`}>
                     <img src={profile_photo} />
                     <div className="profile_content">
-                        <span>Dr. Omer Yuval</span>
-                        <span>Computational neuroscientist</span>
-                        <span>Postdoctoral researcher</span>
+                        <h1 style={{margin: "0 0 10px 0", font: "inherit"}}>Dr. Omer Yuval</h1>
+                        <p style={{margin: "0", font: "inherit"}}>Computational Neuroscientist</p>
+                        <p style={{margin: "0", font: "inherit"}}>Postdoctoral Researcher</p>
+                        <p style={{margin: "0 0 10px 0", font: "inherit"}}>Software Engineer</p>
                         <span>omeryu@tauex.tau.ac.il</span>
                     </div>
                 </div>
@@ -68,7 +69,7 @@ const Home = () => {
                     <span className="info_panel_content">
                         I am a computational neuroscientist studying how biological nervous systems generate smooth and robust behavior.<br/><br/>
                         I mainly focus on locomotion behaviors, although I am also highly interested in natural language processing.<br/><br/>
-
+                        
                         Developing biologically-grounded models allows me to ask questions and make predictions at multiple structural levels and across time scales.<br/><br/>
                         This includes single neuron activity and network dynamics, muscles, body morphology and mechanics, and interactions with the environment.<br/><br/>
                         
