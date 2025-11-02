@@ -22,7 +22,7 @@ const Carousel = () => {
     const pages = [
         {
             src: locust_model_mujoco, type: "image",
-            caption: "Under review: In this work we developed accurate, anatomically-grounded 3D models of two insects with distinct habiatats and specializations. We focused on the effect of passive joint dynamics on locomotion, which cotributes to energy storage and release and rapid recovery from perturbations, and is crucial for designinig robust and energy-efficient robots.",
+            caption: "Under review: In this work we developed accurate, anatomically-grounded 3D models of two insects with distinct habitats and specializations. We focused on the effect of passive joint dynamics on locomotion, which cotributes to energy storage and release and rapid recovery from perturbations, and is crucial for designinig robust and energy-efficient robots.",
             // looked into convergent and divergent gait properties in two anatomically distinct insects. We used ",
             // Using mechanical modling + reinfocement learning to compare their simulate, we looked We measured, quatified, and compared their body morphlogy and locomotion , and examined which aspects of their biomechanics and locomotion conver of We use biomechanical modelling and deep reinforcement learning to capture the gaits that we observed in-vivo in simulations. This allows us to make predictions regarding form-function relations in insects. We are currently focusing on stepping gaits in the desert locust (A) and mole cricket (B) (manuscript in preparation)",
             refs: []

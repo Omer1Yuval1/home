@@ -24,7 +24,7 @@ const Home = () => {
                         <span>omeryu@tauex.tau.ac.il</span>
                     </div>
                 </div>
-            
+                
                 <Carousel />
             </div>
 
@@ -33,9 +33,10 @@ const Home = () => {
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
                     <span className="info_panel_title">Research interests</span>
                     <ul className="info_panel_content">
-                        <li>Neural control of animal locomotion</li>
-                        <li>Biologically-grounded mechanical modelling</li>
-                        <li>Natural language processing</li>
+                        <li>Neuromechanical control of animal locomotion</li>
+                        <li>Biologically-grounded physical modelling</li>
+                        <li>Adaptive behavior and collective motion</li>
+                        <li>Mechanically-grounded language models</li>
                     </ul>
                     <span className="material-symbols-outlined">psychology</span>
                 </div>
@@ -44,9 +45,9 @@ const Home = () => {
                     <span className="info_panel_title">Skills</span>
                     <ul className="info_panel_content">
                         <li>3D Imaging and Computer vision</li>
-                        <li>Optimisation</li>
                         <li>Model-free reinforcement learning</li>
-                        <li>Fullstack development</li>
+                        <li>Multi-objective optimisation</li>
+                        <li>Fullstack web development</li>
                     </ul>
                     <span className="material-symbols-outlined">engineering</span>
                 </div>
