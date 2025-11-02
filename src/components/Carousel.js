@@ -9,7 +9,8 @@ import a3 from "../assets/a3.png";
 import latexs from "../assets/latexs.png";
 import mole_cricket_forward from "../assets/mole_cricket_forward_cropped.mp4";
 // import locust_model_mujoco from "../assets/locust_model_mujoco.png";
-import locust_model_mujoco from "../assets/locust_and_mole_cricket_models.png";
+import locust_model_mujoco from "../assets/anatomy_paper_summary.png";
+import insects_video from "../assets/insects_video.mp4";
 
 const Carousel = () => {
     
@@ -18,47 +19,63 @@ const Carousel = () => {
     const [play, setPlay] = useState(true);
     const [currentPage, setCurrentPage] = useState(0);
 
-    const pages = [{
-                        src: pvd, type: "image",
-                        caption: "In this work we analyzed the morphology of the PVD neuron in wild-type and mutant C. elegans worms. This work included imaging the neurons using confocal microscopy and the development of a custom deep-learning tool for image segmentation and analysis of neuron morphology",
-                        refs: [
-                            {text: "Yuval et al., 2021", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185"},
-                            {text: "Iosilevskii et al., 2024", url: "https://www.sciencedirect.com/science/article/pii/S2666166724002284"},
-                        ],
-                    },
-                    {src: a2, type: "image",
-                        caption: "3D imaging, calibration and reconstruction of the 1mm-long C. elegans nematode",
-                        refs: [
-                            {text: "Yuval et al., 2022", url: "https://etheses.whiterose.ac.uk/30113/1/PhD_Thesis_Resubmission_20220123.pdf"},
-                            {text: "Ilett et al., 2023", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"}
-                        ]
-                    },
-                    {
-                        src: a3, type: "image",
-                        caption: "3D shape reconstruction of semi-transparent worms from multiple perspectives",
-                        refs: [
-                            {text: "Ilett et al., 2023", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"}
-                        ]
-                    },
-                    {
-                        src: latexs, type: "image",
-                        caption: "LaTeXs: a tool for capturing LaTeX semantics to improve online search and text-to-speech of mathematical expressions",
-                        refs: [
-                            {text: "interactive demo", url: "https://omer1yuval1.github.io/LaTeXs/"}
-                        ]
-                    },
-                    {
-                        src: mole_cricket_forward, type: "video",
-                        caption: "In this project we are studying the mole cricket, a unique insect with extreme morphological adaptation that lives underground and specialises in tunnel formation (manuscript in preparation).",
-                        refs: [
+    const pages = [
+        {
+            src: locust_model_mujoco, type: "image",
+            caption: "Under review: In this work we developed accurate, anatomically-grounded 3D models of two insects with distinct habiatats and specializations. We focused on the effect of passive joint dynamics on locomotion, which cotributes to energy storage and release and rapid recovery from perturbations, and is crucial for designinig robust and energy-efficient robots.",
+            // looked into convergent and divergent gait properties in two anatomically distinct insects. We used ",
+            // Using mechanical modling + reinfocement learning to compare their simulate, we looked We measured, quatified, and compared their body morphlogy and locomotion , and examined which aspects of their biomechanics and locomotion conver of We use biomechanical modelling and deep reinforcement learning to capture the gaits that we observed in-vivo in simulations. This allows us to make predictions regarding form-function relations in insects. We are currently focusing on stepping gaits in the desert locust (A) and mole cricket (B) (manuscript in preparation)",
+            refs: []
+        },
+        {
+            src: pvd, type: "image",
+            caption: "In this work we analyzed the morphology of the PVD neuron in wild-type and mutant C. elegans worms. This work included imaging the neurons using confocal microscopy and the development of a custom deep-learning tool for image segmentation and analysis of neuron morphology",
+            refs: [
+                {text: "Yuval et al., 2021", url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185"},
+                {text: "Iosilevskii et al., 2024", url: "https://www.sciencedirect.com/science/article/pii/S2666166724002284"},
+            ],
+        },
+        {
+            src: a2, type: "image",
+            caption: "3D imaging, calibration and reconstruction of the 1mm-long C. elegans nematode",
+            refs: [
+                {text: "Yuval et al., 2022", url: "https://etheses.whiterose.ac.uk/30113/1/PhD_Thesis_Resubmission_20220123.pdf"},
+                {text: "Ilett et al., 2023", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"}
+            ]
+        },
+        {
+            src: a3, type: "image",
+            caption: "3D shape reconstruction of semi-transparent worms from multiple perspectives",
+            refs: [
+                {text: "Ilett et al., 2023", url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"}
+            ]
+        },
+        {
+            src: latexs, type: "image",
+            caption: "LaTeXs: a tool for capturing LaTeX semantics to improve online search and text-to-speech of mathematical expressions",
+            refs: [
+                {text: "interactive demo", url: "https://omer1yuval1.github.io/LaTeXs/"}
+            ]
+        },
+        {
+            src: mole_cricket_forward, type: "video",
+            caption: "In this project we are studying the mole cricket, a unique insect with extreme morphological adaptation that lives underground and specialises in tunnel formation (manuscript in preparation).",
+            refs: [
 
-                        ]
-                    },
-                    {
-                        src: locust_model_mujoco, type: "image",
-                        caption: "We use biomechanical modelling and deep reinforcement learning to capture the gaits that we observed in-vivo in simulations. This allows us to make predictions regarding form-function relations in insects. We are currently focusing on stepping gaits in the desert locust (A) and mole cricket (B) (manuscript in preparation)",
-                        refs: []
-                    },
+            ]
+        },
+        {
+            src: insects_video, type: "video",
+            caption: "",
+            refs: [
+    
+            ]
+        },
+        /* {
+        src: locust_model_mujoco, type: "image",
+        caption: "We use biomechanical modelling and deep reinforcement learning to capture the gaits that we observed in-vivo in simulations. This allows us to make predictions regarding form-function relations in insects. We are currently focusing on stepping gaits in the desert locust (A) and mole cricket (B) (manuscript in preparation)",
+        refs: []
+        }, */
     ];
 
     useEffect(() => {
@@ -74,7 +91,7 @@ const Carousel = () => {
             }, delay);
             return () => clearTimeout(timeout);
         }
-      }, [currentPage, play]);
+    }, [currentPage, play]);
 
     return (
         <div className="carousel_wrapper">
@@ -87,7 +104,7 @@ const Carousel = () => {
                         ?
                             <img src={pages[currentPage].src} />
                         :
-                            <video AutoPlay="true" loop={true} muted controls="controls">
+                            <video key={pages[currentPage].src} AutoPlay="true" loop={false} muted controls="controls">
                                 <source src={pages[currentPage].src} type="video/mp4" />
                             </video>
                         }
