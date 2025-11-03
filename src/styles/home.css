@@ -13,16 +13,6 @@
     color: #1a1927;
 }
 
-@media screen and (max-width: 800px) {
-    .home_wrapper {
-        padding: 0 !important;
-    }
-
-    .profile_wrapper {
-        flex-direction: row !important;
-    }
-}
-
 ul {
     display: flex;
     flex-direction: column;
@@ -115,4 +105,40 @@ ul {
     position: absolute;
     font-size: 38px;
     right: 5%;
+}
+
+/* Tablet: two columns */
+@media (max-width: 1200px) {
+  .info_panel_wrapper {
+    width: 48%;
+  }
+}
+
+/* Phones: single column + tighter spacing */
+@media (max-width: 800px) {
+    .home_wrapper {
+        padding: 0 !important;
+    }
+    
+    .profile_wrapper {
+        flex-direction: column !important;
+    }
+    .info_wrapper {
+        justify-content: center;
+        padding: 0 12px;
+    }
+    .info_panel_wrapper {
+        width: 100%;
+        margin: 0 10px 12px 10px;
+    }
+    
+    /* Optional comfort tweaks on phones */
+    /* .profile_wrapper img {
+        width: 160px;
+        height: 160px;
+    } */
+    
+    /* .profile_content {
+        font-size: 18px;
+    } */
 }
