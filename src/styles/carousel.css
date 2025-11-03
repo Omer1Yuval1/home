@@ -14,7 +14,12 @@
     .carousel_wrapper {
         width: 100% !important;
         margin: 30px 15px;
-        height: 220px;
+        height: 250px;
+    }
+
+    .carousel_caption_wrapper {
+        font-size: 12px;
+        height: 40% !important;
     }
 }
 
