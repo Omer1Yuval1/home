@@ -81,7 +81,7 @@ const Carousel = () => {
     useEffect(() => {
         if(play) {
             if(pages[currentPage].type === "image") {
-                var delay = 2000;
+                var delay = 3000;
             } else if(pages[currentPage].type === "video") {
                 var delay = 6000;
             }

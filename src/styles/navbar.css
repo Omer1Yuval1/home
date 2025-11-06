@@ -37,21 +37,52 @@
 }
 
 .navbar_icons {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 100%;
   /* margin: auto; */
-	width: 25%;
+  width: 25%;
 }
 
 .navbar_icon {
-	/* margin: auto; */
+  /* margin: auto; */
   margin-top: 1%;
 }
 
 .navbar_img {
-	height: 35px;
-	padding: auto;
-	margin: auto;
+  height: 35px;
+  padding: auto;
+  margin: auto;
+}
+
+/* === Mobile navbar (≤700px) === */
+@media (max-width: 700px) {
+  .navbarContainer {
+    /* justify-items: center; */
+    /* flex-wrap: wrap; */          /* allow items to flow to a new line */
+    gap: 8px 12px;            /* row/column gaps for breathing room */
+    height: auto;             /* override fixed 5vh (too cramped on phones) */
+    min-height: 0;
+    padding: 8px 12px;        /* tighter padding on phones */
+  }
+
+  /* Put icons on their own full-width row and center them */
+  .navbar_icons {
+    width: 100%;
+    order: 3;                 /* second row */
+    justify-content: center;
+    /* flex-wrap: wrap; */          /* wrap if needed */
+    gap: 8px;
+  }
+
+  /* Slightly smaller icons on phones */
+  .navbar_img {
+    height: 28px;
+  }
+
+  /* Keep ordering tidy on the first row */
+  .toggle_dark_mode { order: 3; margin-left: auto; }
+  /* .navbarContainer > a:first-child { order: 0; }
+  .user_links_wrapper { order: 2; } */
 }

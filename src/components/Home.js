@@ -24,7 +24,7 @@ const Home = () => {
                         <span>omeryu@tauex.tau.ac.il</span>
                     </div>
                 </div>
-                
+
                 <Carousel />
             </div>
 
@@ -69,17 +69,21 @@ const Home = () => {
                     <br/>
                     <span className="info_panel_content">
                         I am a computational neuroscientist studying how biological nervous systems generate smooth and robust behavior.<br/><br/>
-                        I mainly focus on locomotion behaviors, although I am also highly interested in natural language processing.<br/><br/>
                         
-                        Developing biologically-grounded models allows me to ask questions and make predictions at multiple structural levels and across time scales.<br/><br/>
-                        This includes single neuron activity and network dynamics, muscles, body morphology and mechanics, and interactions with the environment.<br/><br/>
+                        My primary objective is to contribute to breaking the generalization and grounding bounds of current AI systems by using mechanistic insights from biological systems, and by harnessing the power of physical simulation and reinforcement learning (RL).<br/><br/>
+                        {/* I mainly focus on locomotion behaviors, although I am also highly interested in natural language processing.<br/><br/> */}
                         
-                        My ultimate goal is to distill fundamental principles of nervous system across species, and apply them to artificial systems.
+                        {/* Developing biologically-grounded models allows me to ask questions and make predictions at multiple structural levels and across time scales.<br/><br/>
+                        This includes single neuron activity and network dynamics, muscles, body morphology and mechanics, and interactions with the environment.<br/><br/> */}
+                        
+                        {/* My ultimate goal is to distill fundamental principles of nervous system across species, and apply them to artificial systems. */}
                         {/* TODO: but why - what do I want to learn from it or achieve? */}
                         
                         {/* My main focus is the control of locomotion, with an emphasis on neural dynamics and form-function relations. */}
                         {/* I have recently finished my PhD at the university of Leeds, UK, and I am now a postdoctoral researcher in Tel Aviv university. */}
                         {/* I am keen to uncover fundamental principles that allow biological neural networks to give rise to complex behaviours. */}
+
+                        In my free time I enjoy hiking, gardening, and DIY projects.
                     </span>
                 </div>
             </div>

@@ -128,8 +128,13 @@ ul {
         padding: 0 12px;
     }
     .info_panel_wrapper {
-        width: 100%;
         margin: 0 10px 12px 10px;
+
+        flex-grow: 0;  /* stop stretching vertically via flex math */
+        min-height: 0; /* remove the 25% minimum height */
+        width: 100%;   /* single column on phones */
+        padding: 14px 16px; /* slightly tighter spacing */
+
     }
     
     /* Optional comfort tweaks on phones */
