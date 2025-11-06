@@ -84,6 +84,8 @@ const Home = () => {
                         {/* I am keen to uncover fundamental principles that allow biological neural networks to give rise to complex behaviours. */}
 
                         In my free time I enjoy hiking, gardening, and DIY projects.
+
+                        {/* I value open-source and free knowledge sharing */}
                     </span>
                 </div>
             </div>
