@@ -15,7 +15,7 @@ const Home = () => {
             <div className="main_panel_wrapper">
 
                 <div className={`profile_wrapper ${!darkMode ? "profile_wrapper_light" : ""}`}>
-                    <img src={profile_photo} />
+                    <img src={profile_photo} alt='Profile picture of Dr. Omer Yuval (ד"ר עומר יובל)' />
                     <div className="profile_content">
                         <h1 style={{margin: "0 0 10px 0", font: "inherit"}}>Dr. Omer Yuval</h1>
                         <p style={{margin: "0", font: "inherit"}}>Computational Neuroscientist</p>
@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
 
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`} style={{"width": "100%"}}>
-                    <span className="info_panel_title">More about me and my research</span>
+                    <span className="info_panel_title">More about me...</span>
                     <br/>
                     <span className="info_panel_content">
                         I am a computational neuroscientist studying how biological nervous systems generate smooth and robust behavior.<br/><br/>
@@ -82,14 +82,19 @@ const Home = () => {
                         {/* My main focus is the control of locomotion, with an emphasis on neural dynamics and form-function relations. */}
                         {/* I have recently finished my PhD at the university of Leeds, UK, and I am now a postdoctoral researcher in Tel Aviv university. */}
                         {/* I am keen to uncover fundamental principles that allow biological neural networks to give rise to complex behaviours. */}
+                        
+                        My experience in initiating and supervising complex projects has cultivated the ability to make confident, decisive choices at crucial junctures. This skill minimizes risk and accelerates progress, encompassing strategic questioning, software architecture, experimental design, and data management.
+                        This ability was sharpened through countless discussions where providing a clear, logical perspective on the path forward was critical to avoiding wasted effort, and equally, through valuable criticisms that refined my own judgment.<br/><br/>
 
-                        In my free time I enjoy hiking, gardening, and DIY projects.
+                        In my free time I enjoy DIY projects, gardening, and hiking.
 
                         {/* I value open-source and free knowledge sharing */}
                     </span>
                 </div>
             </div>
-
+            <footer>
+                <p>© 2025 Dr. Omer Yuval | <span lang="he">ד"ר עומר יובל</span></p>
+            </footer>
         </div>
     )
 }
