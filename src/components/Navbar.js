@@ -21,6 +21,7 @@ const Navbar = () => {
 
             <div className="user_links_wrapper">
                 <Link to="/cv">CV</Link>
+                <Link to="/publications">Publications</Link>
             </div>
 
             <div className="navbar_icons">

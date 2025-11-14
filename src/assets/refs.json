@@ -1,0 +1,123 @@
+[
+    {
+        "type": "article",
+        "key": "yuval2025multiple",
+        "title": "Multiple locomotion gaits in the mole cricket",
+        "author": "Yuval, Omer and Amir, Avi and Ayali, Amir",
+        "journal": "bioRxiv",
+        "pages": "2025--01",
+        "year": "2025",
+        "publisher": "Cold Spring Harbor Laboratory",
+        "status": "Under Review",
+        "url": "https://www.biorxiv.org/content/10.1101/2025.01.19.633773v1.full"
+    },
+    {
+        "type": "article",
+        "key": "",
+        "title": "Biologically-constrained insect models enable realistic simulations and improve biomechanical predictions of locomotion",
+        "author": "Yuval, Omer and Ozeri, Elad and Amir, Avi and Ayali, Amir",
+        "journal": "",
+        "pages": "2025--01",
+        "year": "2025",
+        "publisher": "",
+        "status": "Under Review",
+        "url": "https://www.biorxiv.org/content/10.1101/2025.01.19.633773v1.full"
+    },
+    {
+        "type": "article",
+        "key": "amir2025six",
+        "title": "Six-legged-bound: a newly described insect gait",
+        "author": "Amir, Avi and Yuval, Omer and Ayali, Amir",
+        "journal": "Royal Society Open Science",
+        "volume": "12",
+        "number": "6",
+        "pages": "250143",
+        "year": "2025",
+        "publisher": "The Royal Society",
+        "url": "https://doi.org/10.1098/rsos.250143"
+    },
+    {
+        "type": "article",
+        "key": "iosilevskii2024protocol",
+        "title": "Protocol for neuron tracing and analysis of dendritic structures from noisy microscopy images using Neuronalyzer",
+        "author": "Iosilevskii, Yael and Yuval, Omer and Shemesh, Tom and Podbilewicz, Benjamin",
+        "journal": "STAR Protocols",
+        "volume": "5",
+        "number": "2",
+        "pages": "103063",
+        "year": "2024",
+        "publisher": "Elsevier",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2666166724002284"
+    },
+    {
+        "type": "inproceedings",
+        "key": "ilett20233d",
+        "title": "3D shape reconstruction of semi-transparent worms",
+        "author": "Ilett, Thomas P and Yuval, Omer and Ranner, Thomas and Cohen, Netta and Hogg, David C",
+        "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "pages": "12565--12575",
+        "year": "2023",
+        "url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Ilett_3D_Shape_Reconstruction_of_Semi-Transparent_Worms_CVPR_2023_paper.pdf"
+    },
+    {
+        "type": "inproceedings",
+        "key": "yuval2023multiobjective",
+        "title": "Multiobjective speed profile optimisation considering fuel and NOx",
+        "author": "Yuval, O and Lin, Z and Chen, H",
+        "booktitle": "Proceedings of 15th ITS European Congress",
+        "year": "2023",
+        "organization": "Leeds"
+    },
+    {
+        "type": "phdthesis",
+        "key": "yuval2022neuromechanical",
+        "title": "The neuromechanical control of Caenorhabditis elegans head motor behaviour in 3D environments",
+        "author": "Yuval, Omer",
+        "year": "2022",
+        "school": "University of Leeds",
+        "url": "https://etheses.whiterose.ac.uk/id/eprint/30113/1/PhD_Thesis_Resubmission_20220123.pdf"
+    },
+    {
+        "type": "article",
+        "key": "deng2021inhibition",
+        "title": "Inhibition Underlies Fast Undulatory Locomotion in Caenorhabditis elegans",
+        "author": "Deng, Lan and Denham, Jack E and Arya, Charu and Yuval, Omer and Cohen, Netta and Haspel, Gal",
+        "journal": "Eneuro",
+        "volume": "8",
+        "number": "2",
+        "year": "2021",
+        "publisher": "Society for Neuroscience",
+        "url": "https://www.eneuro.org/content/8/2/ENEURO.0241-20.2020.abstract"
+    },
+    {
+        "type": "article",
+        "key": "yuval2021neuron",
+        "title": "Neuron tracing and quantitative analyses of dendritic architecture reveal symmetrical three-way-junctions and phenotypes of git-1 in C. elegans",
+        "author": "Yuval, Omer and Iosilevskii, Yael and Meledin, Anna and Podbilewicz, Benjamin and Shemesh, Tom",
+        "journal": "PLOS Computational Biology",
+        "volume": "17",
+        "number": "7",
+        "pages": "e1009185",
+        "year": "2021",
+        "publisher": "Public Library of Science San Francisco, CA USA",
+        "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009185"
+    },
+    {
+        "type": "article",
+        "key": "salfelder2020markerless",
+        "title": "Markerless 3D spatio-temporal reconstruction of microscopic swimmers from video",
+        "author": "Salfelder, Felix and Yuval, Omer and Ilett, Thomas P and Hogg, David C and Ranner, Thomas and Cohen, Netta",
+        "journal": "visual observation and analysis of vertebrate and insect behavior",
+        "year": "2020",
+        "url": "https://homepages.inf.ed.ac.uk/rbf/VAIB20PAPERS/vaibsf20.pdf"
+    },
+    {
+        "type": "article",
+        "key": "yuvalsimulating",
+        "title": "Simulating locomotion under anatomical and mechanical constraints",
+        "author": "Yuval, Omer and Amir, Avi and Lilti, Lena and Ozeri, Elad and Ayali, Amir",
+        "journal": "Universitäts-und Landesbibliothek Darmstadt",
+        "year": "2025",
+        "url": "https://tuprints.ulb.tu-darmstadt.de/server/api/core/bitstreams/0b02a8f8-c241-44fe-a6cf-dc3949a7e6d6/content"
+    }
+]

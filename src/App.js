@@ -3,6 +3,7 @@ import {ThemeContext, ThemeProviderComponent} from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import CV from './components/CV';
+import Publications from './components/Publications';
 import './styles/app.css';
 import { useContext } from 'react';
 
@@ -19,6 +20,7 @@ function App() {
             <Routes>
               <Route path="/*" element={<Home />} />
               <Route path="/cv" element={<CV />} />
+              <Route path="/publications" element={<Publications />} />
             </Routes>
           </div>
         </ThemeProviderComponent>

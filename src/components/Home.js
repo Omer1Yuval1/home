@@ -1,4 +1,4 @@
-import { React, useContext, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
 import Carousel from "./Carousel";
@@ -44,8 +44,9 @@ const Home = () => {
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
                     <span className="info_panel_title">Skills</span>
                     <ul className="info_panel_content">
-                        <li>3D Imaging and Computer vision</li>
                         <li>Model-free reinforcement learning</li>
+                        <li>Physical modeling and simulation</li>
+                        <li>3D Imaging and Computer vision</li>
                         <li>Multi-objective optimisation</li>
                         <li>Fullstack web development</li>
                     </ul>
@@ -83,8 +84,11 @@ const Home = () => {
                         {/* I have recently finished my PhD at the university of Leeds, UK, and I am now a postdoctoral researcher in Tel Aviv university. */}
                         {/* I am keen to uncover fundamental principles that allow biological neural networks to give rise to complex behaviours. */}
                         
-                        My experience in initiating and supervising complex projects has cultivated the ability to make confident, decisive choices at crucial junctures. This skill minimizes risk and accelerates progress, encompassing strategic questioning, software architecture, experimental design, and data management.
-                        This ability was sharpened through countless discussions where providing a clear, logical perspective on the path forward was critical to avoiding wasted effort, and equally, through valuable criticisms that refined my own judgment.<br/><br/>
+                        My experience initiating and leading complex projects has honed my ability to make clear, confident decisions at critical moments—balancing risk and progress through strategic questioning, sound software architecture, experimental design, and data management.
+                        This judgment was shaped through many discussions where clarity and logic were essential to avoid wasted effort and to learn from critique—lessons that continue to refine how I lead and decide.<br/><br/>
+                        
+                        {/* My experience in initiating and supervising complex projects has cultivated the ability to make confident, decisive choices at crucial junctures. This skill minimizes risk and accelerates progress, encompassing strategic questioning, software architecture, experimental design, and data management.
+                        This ability was sharpened through countless discussions where providing a clear, logical perspective on the path forward was critical to avoiding wasted effort, and equally, through valuable criticisms that refined my own judgment.<br/><br/> */}
 
                         In my free time I enjoy DIY projects, gardening, and hiking.
 
