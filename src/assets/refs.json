@@ -1,6 +1,17 @@
 [
     {
         "type": "article",
+        "key": "yuval2025biologically",
+        "title": "Biologically-constrained insect models enable realistic simulations and improve biomechanical predictions of locomotion",
+        "author": "Yuval, Omer and Amir, Avi and Ozeri, Elad and Ayali, Amir",
+        "journal": "bioRxiv",
+        "year": "2025",
+        "publisher": "Cold Spring Harbor Laboratory",
+        "status": "Under Review",
+        "url": "https://www.biorxiv.org/content/10.1101/2025.11.13.687989v1.full.pdf"
+    },
+    {
+        "type": "article",
         "key": "yuval2025multiple",
         "title": "Multiple locomotion gaits in the mole cricket",
         "author": "Yuval, Omer and Amir, Avi and Ayali, Amir",
@@ -8,18 +19,6 @@
         "pages": "2025--01",
         "year": "2025",
         "publisher": "Cold Spring Harbor Laboratory",
-        "status": "Under Review",
-        "url": "https://www.biorxiv.org/content/10.1101/2025.01.19.633773v1.full"
-    },
-    {
-        "type": "article",
-        "key": "",
-        "title": "Biologically-constrained insect models enable realistic simulations and improve biomechanical predictions of locomotion",
-        "author": "Yuval, Omer and Ozeri, Elad and Amir, Avi and Ayali, Amir",
-        "journal": "",
-        "pages": "2025--01",
-        "year": "2025",
-        "publisher": "",
         "status": "Under Review",
         "url": "https://www.biorxiv.org/content/10.1101/2025.01.19.633773v1.full"
     },
