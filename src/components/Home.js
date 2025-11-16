@@ -58,8 +58,8 @@ const Home = () => {
                     <ul className="info_panel_content">
                         <li>Python</li>
                         <li>Javascript (React.js + Node.js)</li>
+                        <li>SQL / NoSQL</li>
                         <li>Matlab</li>
-                        <li>SQL and mongoDB</li>
                         <li>C</li>
                     </ul>
                     <span className="material-symbols-outlined">terminal</span>
