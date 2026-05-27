@@ -1,0 +1,23 @@
+.blog_menu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+}
+
+.blog_menu_wrapper button {
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    font-size: 24px;
+    background-color: lightblue;
+    box-shadow: 0px 2px 18px 0px rgba(50,50,50,0.2);
+}
+
+.blog_menu_wrapper button:hover {
+    background-color: rgb(135, 204, 227);
+}

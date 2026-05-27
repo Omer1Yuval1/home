@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import CV from './components/CV';
 import Publications from './components/Publications';
+import Blog from './components/Blog';
 import './styles/app.css';
 import { useContext } from 'react';
 
@@ -21,6 +22,7 @@ function App() {
               <Route path="/*" element={<Home />} />
               <Route path="/cv" element={<CV />} />
               <Route path="/publications" element={<Publications />} />
+              <Route path="/blog" element={<Blog />} />
             </Routes>
           </div>
         </ThemeProviderComponent>

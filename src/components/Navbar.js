@@ -22,8 +22,9 @@ const Navbar = () => {
             <div className="user_links_wrapper">
                 <Link to="/cv">CV</Link>
                 <Link to="/publications">Publications</Link>
+                <Link to="/blog">Blog</Link>
             </div>
-
+            
             <div className="navbar_icons">
                 <a className="navbar_icon" href="https://github.com/Omer1Yuval1/" target="_blank"><img className="navbar_img" src={github} alt="GitHub" /></a>
                 <a className="navbar_icon" href="https://scholar.google.com/citations?hl=en&user=SaOvLxEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><img className="navbar_img" src={scholar} alt="Google Scholar" /></a>

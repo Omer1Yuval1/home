@@ -2,25 +2,23 @@
     {
         "type": "article",
         "key": "yuval2025biologically",
-        "title": "Biologically-constrained insect models enable realistic simulations and improve biomechanical predictions of locomotion",
-        "author": "Yuval, Omer and Amir, Avi and Ozeri, Elad and Ayali, Amir",
-        "journal": "bioRxiv",
-        "year": "2025",
-        "publisher": "Cold Spring Harbor Laboratory",
-        "status": "Under Review",
-        "url": "https://www.biorxiv.org/content/10.1101/2025.11.13.687989v1.full.pdf"
+        "title": "Biologically Constrained Insect Models Enable Realistic Simulations and Improve Biomechanical Predictions of Locomotion",
+        "author": "Yuval, Omer and Ozeri, Elad and Amir, Avi and Ayali, Amir",
+        "journal": "Soft Robotics",
+        "year": "2026",
+        "publisher": "SAGE Publications Sage CA: Los Angeles, CA",
+        "url": "https://journals.sagepub.com/doi/full/10.1177/21695172261435551"
     },
     {
         "type": "article",
-        "key": "yuval2025multiple",
+        "key": "yuval2026multiple",
         "title": "Multiple locomotion gaits in the mole cricket",
         "author": "Yuval, Omer and Amir, Avi and Ayali, Amir",
-        "journal": "bioRxiv",
-        "pages": "2025--01",
-        "year": "2025",
-        "publisher": "Cold Spring Harbor Laboratory",
-        "status": "Under Review",
-        "url": "https://www.biorxiv.org/content/10.1101/2025.01.19.633773v1.full"
+        "journal": "Journal of Bionic Engineering",
+        "pages": "863--879",
+        "year": "2026",
+        "publisher": "Springer",
+        "url": "https://link.springer.com/article/10.1007/s42235-025-00838-x"
     },
     {
         "type": "article",
@@ -106,7 +104,7 @@
         "key": "salfelder2020markerless",
         "title": "Markerless 3D spatio-temporal reconstruction of microscopic swimmers from video",
         "author": "Salfelder, Felix and Yuval, Omer and Ilett, Thomas P and Hogg, David C and Ranner, Thomas and Cohen, Netta",
-        "journal": "visual observation and analysis of vertebrate and insect behavior",
+        "journal": "Visual observation and analysis of vertebrate and insect behavior",
         "year": "2020",
         "url": "https://homepages.inf.ed.ac.uk/rbf/VAIB20PAPERS/vaibsf20.pdf"
     },
