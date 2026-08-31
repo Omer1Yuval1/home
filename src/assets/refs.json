@@ -1,6 +1,17 @@
 [
     {
         "type": "article",
+        "key": "yuval2026transition",
+        "title": "Dynamic control principles for adaptive gait transitions",
+        "author": "Yuval, Omer and Amir, Avi and Fuxman, Kobi and Ayali, Amir",
+        "journal": "Bioinspiration & Biomimetics",
+        "year": "2026",
+        "publisher": "",
+        "url": "",
+        "status": "Under review"
+    },
+    {
+        "type": "article",
         "key": "yuval2025biologically",
         "title": "Biologically Constrained Insect Models Enable Realistic Simulations and Improve Biomechanical Predictions of Locomotion",
         "author": "Yuval, Omer and Ozeri, Elad and Amir, Avi and Ayali, Amir",

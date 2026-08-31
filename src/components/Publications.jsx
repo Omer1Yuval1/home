@@ -83,13 +83,11 @@ const PublicationEntry = ({ pub, darkMode }) => {
       )}
 
       {/* Authors */}
-      <p /* className="text-gray-700 text-sm mt-1 leading-relaxed" */>
-        {formatAuthors(pub.author)}
-      </p>
+      <p>{formatAuthors(pub.author)}</p>
 
       {/* Source and Year */}
-      <p /* className="text-gray-500 text-sm mt-1 italic" */>
-        {publicationSource && <span /* className="mr-1" */>{publicationSource},</span>}
+      <p>
+        {publicationSource && <span>{publicationSource},</span>}
         &nbsp;{yearText}
       </p>
 
