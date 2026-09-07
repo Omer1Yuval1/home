@@ -1,16 +1,20 @@
 .navbarContainer {
   display: flex;
-  padding: 0 20px;
+  padding: 0px 20px;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
   /* z-index: 1000; */
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
+  height: 6vh;
   min-height: 5vh;
-  background: #1b2631;
+
+  /* background: #1b2631; */
+  background-color: rgb(40, 38, 60);
   /* background: #1C2833; */
+
+  border-bottom: 1px solid rgb(132, 132, 149);
 }
 
 .navbarContainer button, .navbarContainer nav span, .navbarContainer a {
@@ -18,10 +22,15 @@
   border: none;
   background: none;
   cursor: pointer;
+  /* display: flex;
+  align-items: center; */
+  /* margin: auto 0; */
 }
 
 .navbar_link_text {
   font-size: 18px;
+  /* text-align: end; */
+  /* margin: auto; */
 }
 
 .user_links_wrapper {
@@ -30,7 +39,7 @@
   justify-content: space-between;
   width: 10%;
   flex-grow: 1;
-  max-width: 30%;
+  max-width: 50%;
   /* gap: 50px; */
 }
 
@@ -38,6 +47,7 @@
   display: flex;
   align-items: center;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* Theme */
@@ -71,12 +81,16 @@
   .navbarContainer {
     display: flex;
     justify-content: space-between;
-    /* justify-items: center; */
+    align-items: center;
     /* flex-wrap: wrap; */          /* allow items to flow to a new line */
     /* gap: 4px 6px; */            /* row/column gaps for breathing room */
     height: auto;             /* override fixed 5vh (too cramped on phones) */
     min-height: 0;
     padding: 8px 12px;        /* tighter padding on phones */
+  }
+
+  .user_links_wrapper .link_text {
+    display: none;
   }
 
   .user_links_wrapper a {

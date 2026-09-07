@@ -17,12 +17,12 @@ const Navbar = () => {
     return (
         <div className="navbarContainer">
             
-            <Link to="/home/"><button className="navbar_link_text">Home</button></Link>
 
             <div className="user_links_wrapper">
-                <Link to="/cv">CV</Link>
-                <Link to="/publications">Publications</Link>
-                <Link to="/blog">Blog</Link>
+                <Link to="/home/" title="Home"><span className="material-symbols-outlined">home</span><span className="link_text">&nbsp; Home</span></Link>
+                <Link to="/cv" title="CV"><span className="material-symbols-outlined">work_history</span><span className="link_text">&nbsp; CV</span></Link>
+                <Link to="/publications" title="Publications"><span className="material-symbols-outlined">library_books</span><span className="link_text">&nbsp; Publications</span></Link>
+                <Link to="/blog" title="Blog"><span className="material-symbols-outlined">article</span><span className="link_text">&nbsp; Blog</span></Link>
             </div>
             
             <div className="navbar_icons">

@@ -98,39 +98,40 @@ const Carousel = () => {
 
     return (
         <div className="carousel_wrapper">
-            <span style={{"borderRadius": "15px 0 0 15px"}} onClick={() => setCurrentPage(Math.max(0, currentPage-1))} className={`material-icons carousel_next_previous ${!darkMode ? "carousel_next_previous_light" : ""}`}>arrow_back_ios_new</span> {/* style={{"borderRight": "1px solid gray"}} */}
-            
-            <div className={`carousel_main_wrapper ${!darkMode ? "carousel_main_wrapper_light" : ""}`}>
-                <div className="carousel_main_content_wrapper">
-                    <div className="figure_wrapper">
-                        {pages[currentPage].type === "image"
-                        ?
-                            <img src={pages[currentPage].src} />
-                        :
-                            <video key={pages[currentPage].src} autoPlay={true} loop={false} muted controls="controls">
-                                <source src={pages[currentPage].src} type="video/mp4" />
-                            </video>
-                        }
+            <div className="carousel_main">
+                <span style={{"borderRadius": "15px 0 0 15px"}} onClick={() => setCurrentPage(Math.max(0, currentPage-1))} className={`material-icons carousel_next_previous ${!darkMode ? "carousel_next_previous_light" : ""}`}>arrow_back_ios_new</span> {/* style={{"borderRight": "1px solid gray"}} */}
+                
+                <div className={`carousel_main_wrapper ${!darkMode ? "carousel_main_wrapper_light" : ""}`}>
+                    <div className="carousel_main_content_wrapper">
+                        <div className="figure_wrapper">
+                            {pages[currentPage].type === "image"
+                            ?
+                                <img src={pages[currentPage].src} />
+                            :
+                                <video key={pages[currentPage].src} autoPlay={true} loop={false} muted controls="controls">
+                                    <source src={pages[currentPage].src} type="video/mp4" />
+                                </video>
+                            }
+                        </div>
+                    </div>
+                    
+                    <div className="carousel_caption_wrapper">
+                        <div>
+                            {pages[currentPage].caption}
+                            {pages[currentPage].refs.length > 0 && " ("}
+                            {pages[currentPage].refs.map((x, i) => (
+                                <span key={i}>
+                                    {i > 0 && ", "} 
+                                    <a href={x.url} target="_blank">{x.text}</a>
+                                </span>
+                            ))}
+                            {pages[currentPage].refs.length > 0 && ")."}
+                        </div>
                     </div>
                 </div>
                 
-                <div className="carousel_caption_wrapper">
-                    <div>
-                        {pages[currentPage].caption}
-                        {pages[currentPage].refs.length > 0 && " ("}
-                        {pages[currentPage].refs.map((x, i) => (
-                            <span key={i}>
-                                {i > 0 && ", "} 
-                                <a href={x.url} target="_blank">{x.text}</a>
-                            </span>
-                        ))}
-                        {pages[currentPage].refs.length > 0 && ")."}
-                    </div>
-                </div>
+                <span style={{"borderRadius": "0 15px 15px 0"}} onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} className={`material-icons carousel_next_previous ${!darkMode ? "carousel_next_previous_light" : ""}`}>arrow_forward_ios</span>
             </div>
-            
-            <span style={{"borderRadius": "0 15px 15px 0"}} onClick={() => setCurrentPage(Math.min(pages.length-1, currentPage+1))} className={`material-icons carousel_next_previous ${!darkMode ? "carousel_next_previous_light" : ""}`}>arrow_forward_ios</span>
-            
             <div className={`carousel_controllers_wrapper ${!darkMode ? "carousel_controllers_wrapper_light" : ""}`}>
             
                 {pages.map((page, i) => (

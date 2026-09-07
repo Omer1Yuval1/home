@@ -9,7 +9,7 @@
 }
 
 .home_wrapper_light {
-    background-color: #D1F2EB; /* #e1dcb5; */
+    background-color: #d5e9e5; /* #D1F2EB */
     color: #1a1927;
 }
 
@@ -31,12 +31,10 @@ ul {
 .profile_wrapper {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
     color: white;
     margin: auto;
-    /* margin: 20px; */
-    /* width: 30%; */
+    margin-bottom: 20px;
 }
 
 .profile_wrapper_light {
@@ -49,6 +47,11 @@ ul {
     border-radius: 50%;
     margin: 20px 0;
     object-fit: cover;
+    outline: 2px solid rgb(132, 132, 149);
+}
+
+.profile_wrapper_light img {
+    outline: 2px solid rgba(40, 38, 60, 0.5);
 }
 
 .profile_content {
@@ -88,8 +91,13 @@ ul {
 }
 
 .info_panel_wrapper:hover {
-    outline-color: #07755f;
-    background-color: #b3f8e9;
+    outline-color: rgb(132, 132, 149);
+    background-color: rgb(66, 64, 100);
+}
+
+.info_panel_wrapper_light:hover {
+    outline-color: rgba(40, 38, 60, 0.5);
+    background-color: rgb(191, 218, 227);
 }
 
 .info_panel_wrapper_light {

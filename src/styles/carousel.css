@@ -2,16 +2,35 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: aliceblue;
-    width: 70%;
-    /* flex-grow: 1; */
-    height: 400px;
+    align-items: center;
     margin: auto;
+    width: 70%;
+    /* 
+    color: aliceblue;
+    height: 400px;
+    margin: auto; */
     /* border: 3px solid palevioletred; */
+}
+
+.carousel_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    width: 100%;
+    height: 400px;
+    border: 1px dashed rgba(40, 38, 60, 0.5);
+    border-radius: 15px;
+    /* box-sizing: border-box; */
 }
 
 @media screen and (max-width: 800px) {
     .carousel_wrapper {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .carousel_main {
         width: 100% !important;
         margin: 30px 15px;
         height: 200px;
@@ -20,6 +39,13 @@
     .carousel_caption_wrapper {
         font-size: 8px;
         height: 40% !important;
+    }
+
+    .carousel_controllers_wrapper {
+        display: flex;
+        flex-direction: row !important;
+        height: 5%;
+        width: 100%;
     }
 }
 
@@ -51,9 +77,9 @@
 .carousel_controllers_wrapper {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     width: 5%;
+    color: aliceblue !important;
 }
 
 .carousel_controllers_wrapper_light {
@@ -84,7 +110,7 @@
     /* background-color: rgb(40, 38, 60); */ /* antiquewhite */; /* #273746 */
     overflow-y: auto;
     /* width: 100%; */
-    /* padding: 20px; */
+    padding: 0 5px;
     /* border: 1px solid yellowgreen; */
 }
 
@@ -101,7 +127,7 @@
     align-items: center;
     justify-content: center;
     width: 30px;
-    color: #1a1927;
+    color: aliceblue;
     background-color: rgb(55, 53, 83); /* #34495E; */ /* #E6B0AA */
     text-align: center;
     /* height: 100%; */
@@ -113,11 +139,12 @@
 }
 
 .carousel_next_previous_light {
-    background-color: #D4E6F1; /* rgb(249, 222, 185); */
+    color: #1a1927;
+    background-color: rgb(191, 218, 227); /* rgb(249, 222, 185); */
 }
 
 .carousel_next_previous_light:hover {
-    background-color: rgb(248, 213, 164);
+    background-color: rgb(164, 213, 229);
 }
 
 .carousel_buttons:hover, .carousel_next_previous:hover {
