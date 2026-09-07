@@ -60,6 +60,11 @@
     color: #8EC5FF;
 }
 
+.publication_wrapper_dark:hover {
+    outline-color: rgb(132, 132, 149);
+    background-color: rgb(66, 64, 100);
+}
+
 .publication_wrapper .status {
     position: absolute;
     top: 10px;
