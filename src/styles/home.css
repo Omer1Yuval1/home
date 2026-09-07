@@ -6,6 +6,7 @@
     padding: 30px 10px;
     background-color: #1a1927;
     overflow-y: auto;
+    color: white;
 }
 
 .home_wrapper_light {
