@@ -148,7 +148,8 @@
 }
 
 .carousel_next_previous_light:hover {
-    background-color: rgb(164, 213, 229);
+    background-color: #a3c9d6;
+    /* background-color: rgb(164, 213, 229); */
 }
 
 .carousel_buttons:hover, .carousel_next_previous:hover {
