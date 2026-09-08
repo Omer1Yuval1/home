@@ -28,7 +28,7 @@
 }
 
 .navbar_link_text {
-  font-size: 18px;
+  font-size: 8px;
   /* text-align: end; */
   /* margin: auto; */
 }
@@ -40,6 +40,7 @@
   width: 10%;
   flex-grow: 1;
   max-width: 50%;
+  font-size: 20px;
   /* gap: 50px; */
 }
 

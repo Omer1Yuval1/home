@@ -80,10 +80,6 @@
 @media (max-width: 700px) {
     .publication_wrapper {
         width: 90%;
-    }
-
-    .publication_wrapper .status {
-        top: auto;
-        bottom: 10px;
+        padding: 15px 10px;
     }
 }

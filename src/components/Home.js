@@ -31,36 +31,35 @@ const Home = () => {
             <div className="info_wrapper">
 
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
-                    <span className="info_panel_title">Research interests</span>
+                    <span className="info_panel_title">Domains of Expertise</span>
                     <ul className="info_panel_content">
-                        <li>Neuromechanical control of animal locomotion</li>
-                        <li>Biologically-grounded physical modelling</li>
-                        <li>Adaptive behavior and collective motion</li>
-                        <li>Mechanically-grounded language models</li>
+                        <li>Mechanical intelligence & autonomous control</li>
+                        <li>Adaptive behavior in dynamic environments</li>
+                        <li>Real-to-Sim physical modeling</li>
+                        <li>Full-cycle software & simulation pipelines</li> {/* Full-cycle software architecture (from raw sensor data to RL simulation) */}
                     </ul>
                     <span className="material-symbols-outlined">psychology</span>
                 </div>
                 
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
-                    <span className="info_panel_title">Skills</span>
+                    <span className="info_panel_title">Core Competencies</span> {/* Skills */}
                     <ul className="info_panel_content">
-                        <li>Model-free reinforcement learning</li>
-                        <li>Physical modeling and simulation</li>
-                        <li>3D Imaging and Computer vision</li>
-                        <li>Multi-objective optimisation</li>
-                        <li>Fullstack web development</li>
+                        <li>Deep reinforcement learning (RL)</li>
+                        <li>Physics-based modeling & simulation</li>
+                        <li>Markerless 3D computer vision & tracking</li>
+                        <li>Multi-objective optimization algorithms</li>
+                        <li>Full-stack web application architecture</li>
                     </ul>
                     <span className="material-symbols-outlined">engineering</span>
                 </div>
                 
                 <div className={`info_panel_wrapper ${!darkMode ? "info_panel_wrapper_light" : ""}`}>
-                    <span className="info_panel_title">Programming</span>
+                    <span className="info_panel_title">Technical Stack</span>
                     <ul className="info_panel_content">
-                        <li>Python</li>
-                        {/* <li>Javascript (React.js + Node.js)</li> */}
-                        <li>Full stack development: React, CSS, Node, Express, MongoDB, Docker, Cache (Redis)</li>
-                        <li>Matlab</li>
-                        <li>C</li>
+                        <li><u>Languages</u>: Python, MATLAB, JavaScript, C</li>
+                        <li><u>ML & Simulation</u>: MuJoCo, Gymnasium, Stable-Baselines3 (SB3), OpenCV, deep learning-based image segmentation</li>
+                        <li><u>Web Frameworks</u>: React, Vite, Node.js, Express, MongoDB</li>
+                        <li><u>Infrastructure</u>: Docker, Redis, Linux, Git</li>
                     </ul>
                     <span className="material-symbols-outlined">terminal</span>
                 </div>
@@ -73,10 +72,10 @@ const Home = () => {
 
                         I architect and lead end-to-end computational pipelines—from computer vision and automated object tracking to dynamic modeling and RL-driven simulations.<br/><br/>
                         
-                        My primary objective is to advance mechanical intelligence and break the generalization bounds of current AI systems by translating mechanistic insights from biology into robust physical simulations using reinforcement learning (RL).<br/><br/>
+                        My primary objective is to advance mechanical intelligence and break the generalization bounds of current AI systems by translating mechanistic insights from biology into robust physical simulations and data-driven control policies.<br/><br/>
                         
-                        My experience initiating and leading complex projects has honed my ability to make clear, confident decisions at critical moments—balancing risk and progress through strategic questioning, sound software architecture, experimental design, and data management.<br/><br/>
-                        This problem-solving approach was shaped through driving cross-disciplinary research, where rigorous logic and agile iteration are essential to avoid wasted effort and deliver robust, scalable solutions.<br/><br/>
+                        My experience initiating and leading complex projects has honed my ability to make clear, confident decisions at critical moments—balancing risk and progress through strategic planning, sound software architecture, and real-to-sim experimental design.<br/><br/>
+                        This problem-solving approach is fueled by curiosity and shaped through highly collaborative, cross-disciplinary research, where effective teamwork, rigorous logic, and rapid iteration are essential to avoid wasted effort and deliver robust, scalable solutions.<br/><br/>
                         
                         In my free time I enjoy DIY projects, gardening, and hiking.
                     </span>

@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { useLocation, useSearchParams } from 'react-router-dom';
+// import { useLocation, useSearchParams } from 'react-router-dom';
 
 const themeContextInfo = {
     dark_mode: false

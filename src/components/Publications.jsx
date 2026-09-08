@@ -58,6 +58,7 @@ const PublicationEntry = ({ pub, darkMode }) => {
     // Use a regex with global flag to replace all occurrences of your name
     let formatted = authors.replace(/Yuval, Omer/g, '<strong>Yuval, Omer</strong>');
     formatted = formatted.replace(/Yuval, O /g, '<strong>Yuval, O </strong>');
+    formatted = formatted.split(' and ').reduce((acc, cur, i, arr) => acc + (i === arr.length - 1 ? ', and ' : ', ') + cur);
     return <span dangerouslySetInnerHTML={{ __html: formatted }} />;
   };
 
