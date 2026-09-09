@@ -82,7 +82,7 @@ const Home = () => {
                 </div>
             </div>
             <footer>
-                <p>© 2025 Dr. Omer Yuval | <span lang="he">ד"ר עומר יובל</span></p>
+                <p>&copy; {new Date().getFullYear()} Dr. Omer Yuval | <span lang="he">ד"ר עומר יובל</span></p>
             </footer>
         </div>
     )

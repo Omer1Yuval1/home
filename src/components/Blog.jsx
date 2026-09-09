@@ -16,7 +16,7 @@ const Blog = () => {
     <div className={`publications_wrapper ${darkMode ? "publications_wrapper_dark" : ""}`}>
       <h2>My Blog</h2>
       <div className="blog_menu_wrapper">
-        <button>My photos (coming soon)</button>
+        <button>My photography (coming soon)</button>
         <button>My thoughts (coming soon)</button>
       </div>
     </div>
